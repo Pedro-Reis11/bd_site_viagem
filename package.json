@@ -1,0 +1,25 @@
+{
+  "name": "bd_site_viagem",
+  "version": "1.0.0",
+  "description": "banco de dados para site de viagens",
+  "homepage": "https://github.com/Pedro-Reis11/bd_site_viagem#readme",
+  "bugs": {
+    "url": "https://github.com/Pedro-Reis11/bd_site_viagem/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pedro-Reis11/bd_site_viagem.git"
+  },
+  "license": "ISC",
+  "author": "Pedro Reis",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "mysql2": "^3.23.3"
+  }
+}
