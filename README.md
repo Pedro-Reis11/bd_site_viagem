@@ -1,3 +1,5 @@
+#bd_site_viagem
+
 -- 1. Mostrar todos os clientes
 SELECT *
 FROM cliente;
