@@ -46,7 +46,7 @@ export const cadastrarDestinoTuristico = (req,res)=>{
     } = req.body;
 
     if(!cidade||!pais||!descricao){
-        return res.status(404).json({
+        return res.status(400).json({
             msg_erro: 'Todos os dados são obrigatórios'
         });
     }
@@ -60,7 +60,7 @@ export const cadastrarDestinoTuristico = (req,res)=>{
     bd.query(query,[cidade,pais,descricao],(erro,resultado)=>{
         if(erro){
             return res.status(500).json({
-                msg_erro:erro.messsage
+                msg_erro:erro.message
             });
         }
 
@@ -81,6 +81,12 @@ export const atualizarDestinoTuristico = (req,res)=>{
         pais,
         descricao
     } = req.body;
+
+    if(!cidade || !pais || !descricao){
+        return res.status(400).json({
+            msg_erro: 'Todos os dados são obrigatórios'
+        });
+    }
 
     const query = `
     UPDATE destino_turistico
@@ -104,7 +110,7 @@ export const atualizarDestinoTuristico = (req,res)=>{
     }
 
     res.json({
-        mensagem: 'Destino atualizado com sucesso'
+        mensagem: 'Destino removido com sucesso'
     }); 
     });
 };

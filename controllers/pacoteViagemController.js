@@ -70,8 +70,8 @@ export const cadastrarPacote = (req,res)=>{
         id_destino
     } = req.body;
 
-    if(!nome||!preco||!data_inicio||!data_fim||!id_destino){
-        return res.status(404).json({
+    if(!nome || preco === undefined || !data_inicio || !data_fim || !id_destino){
+        return res.status(400).json({
             msg_erro: 'Todos os campos são obrigatórios'
         });
     }
@@ -110,6 +110,12 @@ export const atualizarPacote = (req,res)=>{
         data_fim,
         id_destino
     } = req.body;
+
+    if(!nome || preco === undefined || !data_inicio || !data_fim || !id_destino){
+        return res.status(400).json({
+            msg_erro: 'Todos os campos são obrigatórios'
+        });
+    }
 
     const query = `
     UPDATE pacote_viagem

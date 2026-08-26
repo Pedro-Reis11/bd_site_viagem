@@ -85,6 +85,12 @@ export const atualizarCliente = (req,res)=>{
         cpf
     } = req.body;
 
+    if(!nome || !email || !telefone || !cpf){
+        return res.status(400).json({
+            msg_erro: 'Todos os campos são obrigatórios!'
+        });
+    }
+
     const query = `
     UPDATE cliente
     SET nome = ?,
