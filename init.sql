@@ -3,7 +3,7 @@ CREATE DATABASE travel_db;
 USE travel_db;
 
 CREATE TABLE cliente (
-    id_cliente INT PRIMARY KEY AUTO_INCREMENT,
+    id INT PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(100) NOT NULL,
     email VARCHAR(150) NOT NULL UNIQUE,
     telefone VARCHAR(20) NOT NULL,
@@ -11,20 +11,20 @@ CREATE TABLE cliente (
 );
 
 CREATE TABLE destino_turistico (
-    id_destino INT PRIMARY KEY AUTO_INCREMENT,
+    id INT PRIMARY KEY AUTO_INCREMENT,
     cidade VARCHAR(100) NOT NULL,
     pais VARCHAR(100) NOT NULL,
     descricao TEXT
 );
 
 CREATE TABLE pacote_viagem (
-    id_pacote INT PRIMARY KEY AUTO_INCREMENT,
+    id INT PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(100) NOT NULL,
     preco DECIMAL(10,2) NOT NULL,
     data_inicio DATE NOT NULL,
     data_fim DATE NOT NULL,
     id_destino INT NOT NULL,
-    FOREIGN KEY (id_destino) REFERENCES destino_turistico(id_destino) 
+    FOREIGN KEY (id_destino) REFERENCES destino_turistico(id) 
 );
 
 -- CLIENTES
