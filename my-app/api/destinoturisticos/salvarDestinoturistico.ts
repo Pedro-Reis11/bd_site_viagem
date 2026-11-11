@@ -1,0 +1,1 @@
+import{salvar}from'../base';import{URL_DESTINOTURISTICOS}from'../../config/api';export async function salvarDestinoturistico(id:number|undefined,x:any){return salvar(URL_DESTINOTURISTICOS,id,x,'Destino')}

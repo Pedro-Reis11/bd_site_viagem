@@ -1,0 +1,1 @@
+import{InterfacePacoteviagem}from'./InterfacePacoteviagem';import{InterfaceDestinoturistico}from'./InterfaceDestinoturistico';export interface PropriedadesPacoteviagem{item:InterfacePacoteviagem;destinos:InterfaceDestinoturistico[];iniciarEdicao:(x:InterfacePacoteviagem)=>void;excluirPacoteviagem:(id?:number)=>void}

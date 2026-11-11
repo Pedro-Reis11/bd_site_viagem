@@ -1,0 +1,1 @@
+import{InterfaceCliente}from'./InterfaceCliente';export interface PropriedadesFormularioCliente{valor:InterfaceCliente;idEdicao?:number;salvarDados:(id:number|undefined,x:InterfaceCliente)=>void;limparFormulario:()=>void}

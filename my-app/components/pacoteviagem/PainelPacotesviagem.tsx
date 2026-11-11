@@ -1,0 +1,1 @@
+import{Painel}from'../Generico';import{URL_PACOTESVIAGEM,URL_DESTINOTURISTICOS}from'../../config/api';export default function PainelPacotesviagem(){return <Painel titulo="Painel de Pacotes de Viagem" url={URL_PACOTESVIAGEM} campos={['nome','preco','data_inicio','data_fim','id_destino']} relacao={{nome:'destino',url:URL_DESTINOTURISTICOS,campo:'id_destino'}}/>}

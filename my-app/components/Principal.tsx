@@ -1,0 +1,1 @@
+import{ScrollView}from'react-native';import PainelClientes from'./cliente/PainelClientes';import PainelDestinos from'./destinoturistico/PainelDestinoturisticos';import PainelPacotes from'./pacoteviagem/PainelPacotesviagem';export default function Principal(){return <ScrollView><PainelClientes/><PainelDestinos/><PainelPacotes/></ScrollView>}

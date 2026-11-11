@@ -1,0 +1,8 @@
+*.md
+!README.md
+!readme.md
+!AGENTS.md
+node_modules/
+**/node_modules/
+.devcontainer/
+devcontainer/

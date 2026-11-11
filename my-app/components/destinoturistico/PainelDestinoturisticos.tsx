@@ -1,0 +1,1 @@
+import{Painel}from'../Generico';import{URL_DESTINOTURISTICOS}from'../../config/api';export default function PainelDestinoturisticos(){return <Painel titulo="Painel de Destinos Turísticos" url={URL_DESTINOTURISTICOS} campos={['cidade','pais','descricao']}/>}

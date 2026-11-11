@@ -1,0 +1,1 @@
+import{InterfaceDestinoturistico}from'./InterfaceDestinoturistico';export interface PropriedadesDestinoturistico{item:InterfaceDestinoturistico;iniciarEdicao:(x:InterfaceDestinoturistico)=>void;excluirDestinoturistico:(id?:number)=>void}

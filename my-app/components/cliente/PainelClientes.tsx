@@ -1,0 +1,1 @@
+import{Painel}from'../Generico';import{URL_CLIENTES}from'../../config/api';export default function PainelClientes(){return <Painel titulo="Painel de Clientes" url={URL_CLIENTES} campos={['nome','email','telefone','cpf']}/>}

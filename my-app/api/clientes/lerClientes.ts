@@ -1,0 +1,1 @@
+import{ler}from'../base';import{URL_CLIENTES}from'../../config/api';import{InterfaceCliente}from'../../interface/InterfaceCliente';export async function lerClientes(){return ler(URL_CLIENTES) as Promise<InterfaceCliente[]>}

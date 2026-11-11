@@ -1,0 +1,1 @@
+import{InterfaceDestinoturistico}from'./InterfaceDestinoturistico';export interface PropriedadesFormularioDestinoturistico{valor:InterfaceDestinoturistico;idEdicao?:number;salvarDados:(id:number|undefined,x:InterfaceDestinoturistico)=>void;limparFormulario:()=>void}

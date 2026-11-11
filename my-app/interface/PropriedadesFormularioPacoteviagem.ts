@@ -1,0 +1,1 @@
+import{InterfacePacoteviagem}from'./InterfacePacoteviagem';import{InterfaceDestinoturistico}from'./InterfaceDestinoturistico';export interface PropriedadesFormularioPacoteviagem{valor:InterfacePacoteviagem;idEdicao?:number;destinos:InterfaceDestinoturistico[];salvarDados:(id:number|undefined,x:InterfacePacoteviagem)=>void;limparFormulario:()=>void}

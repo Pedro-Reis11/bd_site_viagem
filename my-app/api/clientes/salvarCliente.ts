@@ -1,0 +1,1 @@
+import{InterfaceCliente}from'../../interface/InterfaceCliente';import{URL_CLIENTES}from'../../config/api';import{salvar}from'../base';export async function salvarCliente(id:number|undefined,x:InterfaceCliente){return salvar(URL_CLIENTES,id,x,'Cliente')}

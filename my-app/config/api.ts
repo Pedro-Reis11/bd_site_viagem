@@ -1,0 +1,1 @@
+export const API_BASE_URL='http://localhost:3000'; export const URL_CLIENTES=`${API_BASE_URL}/cliente`; export const URL_DESTINOTURISTICOS=`${API_BASE_URL}/destino`; export const URL_PACOTESVIAGEM=`${API_BASE_URL}/pacote`;
